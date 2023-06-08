@@ -6,10 +6,10 @@ class ChatConsumer(AsyncWebsocketConsumer):
         self.room_name = self.scope['url_route']['kwargs']['nome_sala']
         self.room_group_name = f'chat_{self.room_name}'
 
-        #entrando na sala
+        # entrou na sala
         await self.channel_layer.group_add(
             self.room_group_name,
-            self.room_name
+            self.channel_name
         )
 
         await self.accept()
