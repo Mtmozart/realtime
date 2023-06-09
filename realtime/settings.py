@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-0m$n8kpz6#c7lvvzmoax*ojz1qoax-gc2e)r6n(@7=ul7ud$%3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -129,7 +129,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Configuração do Channels porque a wsgi não suporta
-ASGI_APPLICATION = 'realtime.routing.applicatoin'
+ASGI_APPLICATION = 'realtime.routing.application'
 
 CHANNEL_LAYERS = {
     'default': {

@@ -16,3 +16,4 @@ class SalaView(TemplateView):
             json.dumps(self.kwargs['nome_sala'])
         )
         return context
+
