@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'bootstrap4',
-    'channels',
+    'daphne',
     'chat',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'realtime.wsgi.application'
+"""WSGI_APPLICATION = 'realtime.wsgi.application'"""
 
 
 # Database
